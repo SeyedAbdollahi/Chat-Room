@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/template_room_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/template_room_name"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.widget.LinearLayout>

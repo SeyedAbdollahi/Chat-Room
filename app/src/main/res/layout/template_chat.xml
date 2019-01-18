@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/template_chat_day_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/template_chat_day_time"
+        android:textColor="@color/light_gray"
+        android:padding="3dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/time_background"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_brightness_white_36dp"
+                android:src="@drawable/ic_account_circle_black_36dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:layout_margin="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/template_chat_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_background">
+
+                <TextView
+                    android:id="@+id/template_chat_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/template_chat_username"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/template_chat_text"/>
+
+                <TextView
+                    android:id="@+id/template_chat_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/template_chat_text"
+                    android:textColor="@android:color/white"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/template_chat_username"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/template_chat_text_time"/>
+
+                <TextView
+                    android:id="@+id/template_chat_text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/template_chat_text_time"
+                    android:textColor="@color/light_gray"
+                    android:padding="5dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/template_chat_text"/>
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="15"/>
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ChatRoom</string>
+    <string name="error_on_failure">No internet , Checking the network</string>
+    <string name="error_unknown">Unknown Error</string>
+    <string name="try_again">Try Again</string>
+    <string name="room_created">Room created successfully</string>
+    <string name="create">Create</string>
+    <string name="create_room">Create Room</string>
+    <string name="enter_name">Please enter room name</string>
+    <string name="name">Name</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="logout">Logout</string>
+    <string name="logout2">Logout!</string>
+    <string name="are_you_sure">Are you sure want to logout?</string>
+    <string name="app_username">پیام رسان chatRoom</string>
+    <string name="app_message">اولین پیام را شما ارسال کنید</string>
+    <string name="welcome">Welcome to ChatRoom</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="get_started">Login or Register to get started</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="message">message</string>
+    <string name="create_acc">Create an account</string>
+    <string name="username">username</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="template_room_name">room name</string>
+    <string name="template_chat_day_time">2018.08.26</string>
+    <string name="template_chat_username">Reza7516</string>
+    <string name="template_chat_text">Hello World!</string>
+    <string name="template_chat_text_time">12:12</string>
+</resources>
